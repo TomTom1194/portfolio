@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Poppins",sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #b5d4a9;
+}
+.sellcard {
+    background-color: #fff;
+    width: 80rem;
+    height: 40rem;
+    box-shadow: 0 8px 32px 0 rgba(43, 43, 48, 0.37);
+}
+.sellcart__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    width: 100%;
+    height: 12%;
+}
+.sellcart__back {
+    display: flex;
+    flex-direction: row;
+}
+.sellcart__back--text {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.sellcart__arrow {
+    color: #8b8b8b;
+}
+.sellcart__group--2 {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    
+}
+.sellcart__image {
+    background-image: url(https://png.pngtree.com/png-vector/20240205/ourlarge/pngtree-small-leaves-potted-plant-png-image_11618868.png);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.info {
+    width: 60%;
+    height: 100%;
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info__heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+.info__sub {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #8b8b8ba9;
+}
+.info__price {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #414040;
+}
+.info__desc {
+    font-size: 1.6rem;
+    color: #8b8b8b;
+    font-weight: 300;
+}
+.info__button {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 12px;
+}
+.info__submit {
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 12px 16px;
+    width: 16rem;
+    border: 1px solid rgb(214, 214, 214);
+    outline: none;
+    border-radius: 3px;
+}
+@media (min-width:650px) {
+    .info__button {
+        flex-direction: row;
+    }
+}

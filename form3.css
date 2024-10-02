@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Poppins",sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+.background {
+    background-image: url(https://i.pinimg.com/564x/d7/43/2a/d7432a0b1ebef96a6b3d89e00ed7a036.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+.form__login {
+    position: absolute;
+    width: 70%;
+    height: 40rem;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 0 28px;
+}
+.form__group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+.form__submit {
+    width: 100%;
+    height: 3rem;
+    color: white;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4595e6;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.form__signup {
+    background-color: #3db4cc;
+}
+.form__input {
+    font-size: 1.6rem;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+    
+}
+.form__input::placeholder {
+    color: rgb(236, 236, 236);
+    font-weight: 200;
+    font-family: "Poppins",sans-serif;
+}
+.form__heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(204, 204, 204);
+    font-weight: 300;
+    font-family: "Poppins",sans-serif;
+}
+/* .background2 {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 2;
+} */
+ .form__input:focus {
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+ }
+ .form__input {
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+ }

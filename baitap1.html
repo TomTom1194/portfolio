@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Ex : 1
+     Block : flash-message
+     element : image title, description(desc), button
+     modifier: primary, secondary
+      -->
+     <!-- Block 1 &2:
+      flash-message
+      flash-message_image, flash-message_title, flash-message_desc, flash-message_button
+       -->
+      <!-- Block 1: flash-message_title--primary, flash-message_button--primary
+       Block 2: flash-message_title--secondary, flash-message_button--secondary-->
+       <h3 class="flash-message_title flash-message_button--primary">OK, COOL</h3>
+       <h3 class="flash-message_button flash-message_button--primary"></h3>
+       <!-- Tao 1 file html nhu da hoc va lam tat ca cac bai duoi day
+        1. Liet ke 10 the inline, 10 the block va cac the semantic htlm5 ma ban biet
+        - the a, the button, the area, the span, the b, the i,the sub, the output, the option, the mark
+        - the div, the p, ul, ol, h1, h2, h3, h4, h5, h6, header, footer, main,iframe
+        2. lam mot vi du ve BEM cho block co ten la boy.
+        -  Boy__arm, boy__leg, boy__face, boy__eye, boy__nose, boy__ear
+        - boy__arm--long, boy__leg--short, boy__eye--big, boy__nose--small, boy__ear--deaf
+        - boy--tall, boy--big
+        3. hay lam mot vi du giua the block va the inline
+        <p>de biet them thong tin xin moi click vao <a href="#"> day</a>
+        4. ap dung BEM dat ten cho vi du nay :    co ten laf dropdown
+        Dropdown
+        Dropdown_CTA, Dropdown_newproject, Dropdown_viewprofile, Dropdown_settings, Dropdown_logout
+        block 1 : Dropdown_CTA--white
+        block 2 : Dropdown_newproject--white, Dropdown_viewprofile--white, Dropdown_settings--white, Dropdown_logout--white-->
+        <div class="dropdown">
+            <div class="dropdown__selected">
+                <span class="dropdown__selected"></span>
+                <i class="fa fa-caret-down dropdown__caret"></i>
+            </div>
+            <div class="dropdown__list">
+                <div class="dropdown__item">
+                    <span class="dropdown__title"></span>
+                    <i class="fa fa-plus dropdown__icon"></i>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

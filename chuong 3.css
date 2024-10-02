@@ -1,0 +1,156 @@
+/* khai bao variable */
+:root {
+    --primary-color : #af40f0;
+    --secondary-color : #1becca;
+}
+/* khi muon su dung ta dung var(--primary-color) */
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.boxed {
+    width: 20rem; height: 20rem;
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    cursor: pointer;
+    /* van chiem dien tich, co the nhan vo duoc */
+    opacity: 0;
+    /* van chiem dien tich, khong tro vo duoc */
+    visibility: hidden;
+    /* bien mat hoan toan */
+    display: none;
+    /* direction : to right, to left, to bottom, to top
+    tu trai qua phai xuong duoi : to right bottom
+    tu phai qua trai xuong duoi : to left bottom
+    color1
+    color2 */
+}
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: var(--primary-color);
+    
+}
+@supports ( -webkit-background-clip: text) {
+    .title {
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    }
+}
+/* .background {
+    background-image: linear-gradient(to right bottom, rgba(64, 120, 240, 0.6), rgba(233, 181, 36, 0.8)),
+    url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+} */
+ .shadow {
+    --primary-color : #b6e706;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--primary-color);
+    margin: 5rem auto;
+    /* box-shadow : x y blur scale color */
+    box-shadow: inset 12px -11px 20px 0px #00000059;
+ }
+ .shadow-text {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-left: 3rem;
+    color: var(--primary-color);
+    text-shadow:  9px -5px 15px var(--secondary-color) ;
+ }
+ ul {
+    font-size: 4rem ;
+    font-weight: bold;
+ }
+ /* li:first-of-type {
+    color: #27eecd;
+ } */
+ /* p:first-of-type  {
+    color: red;
+ } */
+ li:nth-last-of-type(2) span {
+    color: #b6e706;
+ }
+ /* li:first-child {
+    color: red;
+ }
+ li:nth-child(3) {
+    color: purple;
+ }
+ li:nth-last-child(2) {
+    color: yellowgreen
+ }
+ li:not(:first-child) {
+    color: green;
+ }
+ li:not(:last-child) {
+    color: rgb(163, 11, 11);
+ }
+ li:nth-child(odd) {
+    color: black;
+ }
+ li:nth-child(even) {
+    color: #af40f0;
+ } */
+  h3 + .title {
+    color: orange;
+  }
+  /* h3 +.title + .title2 {
+    color: blue;
+  } */
+  h3 ~ .title2 {
+    color: #b6e706;
+  }
+  a[href^="https"] {
+    color: rgb(255, 60, 0);
+  }
+  a[href$=".1234"] {
+    color: #af40f0;
+  }
+  a[href*="www"] {
+    color: rgb(32, 182, 89);
+  }
+  div[data-title="value"] {
+    color: #f0407b;
+  }
+  p::first-letter {
+    color: red;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  p::first-line {
+    color: #b6e706;
+  }
+  .boxed2 {
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+    transition: background-color 1s linear, color 1s ease;
+    /* transition: all 5s ease; */
+    /* opacity: 0; */
+    /* transition-delay: 2s; */
+    font-size: 2rem;
+    /* transitionn : property 2s easing*/
+  }
+  .boxed2:hover {
+    background-color: #0a9127;
+    color: white;  
+    /* opacity: 1; */
+}

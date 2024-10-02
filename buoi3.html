@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Rubik:wght@400;500&display=swap" rel="stylesheet">    
+<title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(45deg,orange, red);
+            height:  100vh;
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            margin: 50px auto;
+            padding: 90px 20 px;
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px 12px;
+            
+
+        }
+        input[type="email"],input[type="password"]{
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: none;
+            background: #e0dede;
+            outline: none;
+        }
+        a{
+         color: #333;
+         opacity: 0.7;
+         text-decoration: none;
+       
+        }
+        input[type="submit"]{
+            padding: 8px;
+            width: 40%;
+            border-radius: 10px;
+            margin-top: 15px;
+            background: rgb(235, 62, 56);
+            border: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            
+        }
+        h1{
+            font-family: 'Lato', sans-serif;
+            
+        }
+        input[type="submit"]:hover{
+            background: #333
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Sign in</h1>
+        <form >
+            <input type="email" placeholder="Enter your email"><br>
+            <input type="password" placeholder="Enter your password"><br>
+            <a href="#">forgot your password</a><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

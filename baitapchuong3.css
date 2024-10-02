@@ -1,0 +1,158 @@
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.text {
+    font-size: 10rem;
+    font-weight: 1000;
+    /* display: inline-block; */
+    margin-top: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right bottom,#f7d26d,#f00e92);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+button {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: center center;
+    width: 25rem;
+    height: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button--green {
+    /* background-color : #05e650; */
+     background-image: linear-gradient(to right,#60e8a2,#49c6c0);
+    box-shadow: 0 10px 15px 0 #60e8a27c;
+    
+}
+.button--green:hover {
+    background-color: red;
+     background-image :linear-gradient(to right,#60c2e8,#233eb8);
+    box-shadow: 0 10px 15px 0 #60e8a27c;
+    /* -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear; */
+}
+.button--blue {
+    background-image: linear-gradient(to right,#a7dfff,#67acea);
+    box-shadow: 0 10px 15px 0 #a7dfff;
+}
+.button--purple {
+    background-image: linear-gradient(to right,#a8b4ff,#a47ff0);
+    box-shadow: 0 10px 15px 0 #a8b4ff;
+}
+.button--orange {
+    background-image: linear-gradient(to right,#eec085,#e88d50);
+    box-shadow: 0 10px 15px 0 #eec085;
+}
+.button--red {
+    background-image: linear-gradient(to right,#eea997,#d6615f);
+    box-shadow: 0 10px 15px 0 #eea997;
+}
+.button--pink {
+    background-image: linear-gradient(to right,#f099a9,#df6b84);
+    box-shadow: 0 10px 15px 0 #f099a9;
+}
+.color__item {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+}
+.color__item:first-child {
+    background-color: #9940ef;
+}
+.color__item:nth-child(2) {
+    background-color: #32d6a9;
+}
+.color__item:nth-child(3) {
+    background-color: #24b9e0;
+}
+.color__item:nth-child(4) {
+    background-color: #e92c47;
+}
+.color__item:nth-child(5) {
+    background-color: #da3b9f;
+}
+.color__item:nth-child(6) {
+    background-color: #f5a326;
+}
+.color__item2 {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+}
+.color__item2:first-child {
+    background-color: #000000;
+}
+.color__item2:nth-child(2) {
+    background-color: #555555;
+}
+.color__item2:nth-child(3) {
+    background-color: #888888;
+}
+.color__item2:nth-child(4) {
+    background-color: #d2d2d2d2;
+}
+.color__item2:nth-child(5) {
+    background-color: #e8e8e8e8;
+}
+.color__item2:nth-child(6) {
+    background-color: #fcfcfcfc;
+}
+.color__item2 + .color__item2 {
+    background-color: orange;
+}
+.color__item2:not(:last-child) {
+    background-color: brown;
+}
+.color__item2 ~ .color__item2 {
+    background-color: cyan;
+}
+.color__item:hover {
+    background-color: #db15d1;
+    transition: 1s ease;
+}
+div[data-link^="https"] {
+    color: blue;
+}
+div[data-link$=".vn"] {
+    color: red;
+}
+div[data-name*="hello"] {
+    color: #9940ef;
+}
+div[data-name="againhello"] {
+    color: #05e650;
+}
+input[type="email"] {
+    border: 2px solid black;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: inset 0 4px 5px 0 rgba(0, 0, 0, 0.438);
+    margin-left: 2rem;
+}
+/* input[name="fullname"] {
+
+} */

@@ -1,0 +1,253 @@
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    height: 2000px;
+}
+.boxed {
+    width: 10rem;
+    height: 5rem;
+    background-color: red;
+    /* transform : scale scaleX scaleY */
+    /* transform: scaleX(2) scaleY(2);
+    transform: scale(2,2);
+    transform: rotate(45deg);
+    transform: translateX(100%) translateY(100%);
+    /* transform: scale(2) rotate(45deg) translate(100%,10%); */
+    /* transform: skewX(30deg) skewY(30deg) translate(100%,100%) ; */ 
+    /* position : relative;
+    left: 10px;
+    top : 10px; */
+    /* bottom: 15px; */
+    /* right: 20px; */
+}
+.wrap {
+    width: 100%;
+    height: 50rem;
+    background-color: black;
+    position: relative;
+}
+p {
+    color: rgb(31, 32, 32);
+    /* position: relative;
+    z-index: 1; */
+}
+.boxed {
+    position: absolute;
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* overlay all  */
+    /* left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; */
+    /* cach 2 */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto; */
+    /* overlay theo chieu doc */
+    left: 0;
+    top: 0;
+    height: auto;
+    bottom: 0;
+    z-index: 2;
+}
+.header {
+    width: 100%;
+    height: 10rem;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 12, 12, 0.151);
+}
+.model__content {
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    padding: 5rem;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    text-align: center;
+}
+.video {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.video__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.video__icon {
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: scale(3) translate(-50%,-50%);
+}
+.card {
+    width: 20rem;
+    height: 60rem;
+    background-color: rgba(0, 0, 0, 0.74);
+    position: relative;
+}
+.sale {
+    color: #fff;
+    padding: 5px 10px;
+    background-color: rgb(231, 169, 33);
+    position: absolute;
+    right: 2px;
+    top: 1rem;
+    border-radius: 1rem;
+    z-index: 2;
+    font-size: 1.2rem;
+}
+.bar {
+    width: 20rem;
+    height: 1rem;
+    background-color: #c7c7c7;
+    margin: 5rem auto 0;
+    border-radius: 5px;
+    position: relative;
+}
+.bar__progress {
+    background-color: #09af62;
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+}
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #09af62;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title {
+    padding: 0 0 0 20px;
+    position: relative;
+}
+.title::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line {
+    margin: 5rem 0;
+    text-align: center;
+    position: relative;
+}
+.line::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line__text {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+}
+.icon {
+    margin: 0 auto ;
+    /* background-color: black; */
+    width: 5rem;
+    height: 5rem;
+    color: rgb(132, 0, 255);
+    position: relative;
+    border-radius: 5px;
+}
+.icon__user {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: 0.25;
+}
+.effect {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid orange;
+    margin: 5rem;
+    transition: color 0.5s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+.effect::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    background-color: orange;
+    position: absolute;
+    z-index: -1;
+    transition: width 0.25s linear;
+}
+.effect:hover::before {
+    width: 100%;
+}
+.effect:hover {
+    color: white;
+}
